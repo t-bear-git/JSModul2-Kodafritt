@@ -6,14 +6,14 @@ const aikListEl = document.querySelector('.aik-list');
 
 // IIFE.
 (function () {
-  // Custom Event for Malmö FF
+  // Custom Event for Malmö FF.
   malmoBtnEl.addEventListener('click', (event) => {
     malmoListEl.classList.remove('hidden');
     const malmoEvent = new CustomEvent('malmoEvent', { detail: malmoBtnEl });
     document.dispatchEvent(malmoEvent);
   });
 
-  //  Custom Event for AIK
+  //  Custom Event for AIK.
   aikBtnEl.addEventListener('click', (event) => {
     aikListEl.classList.remove('hidden');
     const aikEvent = new CustomEvent('aikEvent', {
